@@ -140,13 +140,7 @@ print(margin_volatility)
 print("\nCost vs Sales:")
 
 print(df[["Product Name", "Sales", "Cost"]].head(10))
-import matplotlib.pyplot as plt
 
-plt.scatter(df["Sales"], df["Cost"])
-plt.xlabel("Sales")
-plt.ylabel("Cost")
-plt.title("Cost vs Sales")
-plt.show()
 margin_threshold = 20
 print("\nMargin Risk Flags:")
 
